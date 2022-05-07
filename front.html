@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            /* CSS reset margin padding of body = 0 */
+            margin: 0px;
+            padding: 0px;
+            background: url(img/124383.jpg);
+            /* select image from left menu and copy relative path and paste in background url of body */
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            font-size: 18px;
+        }
+        .left
+        {
+            /* border: 2px solid red;  */
+            /*border taken initially to setup margin/padding/position, remove later when done */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+        .mid
+        {
+            /* border: 2px solid green; */
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+        .right
+        {
+            /* border: 2px solid blue;  */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 50px;
+        }
+        .navbar li
+        {
+            display: inline-block;
+        }
+        .navbar li a
+        {
+            color: white;   /* font color of navbar anchors */
+            text-decoration: none;
+            padding: 0px 20px;
+        }
+        .navbar li a:hover
+        {
+            color: black;   /* font color of navbar anchors */
+            text-decoration: underline;
+        }
+        .left img
+        {
+            height: 80px;
+            width: 80px;
+        }
+        .left div
+        {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .btn
+        {
+            margin: 10px 10px;
+            font-size: 15px;
+            padding: 5px 10px; 
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;    /* necessary */
+        }
+        .btn:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        .container
+        {
+            /* border: 2px solid white; */
+            margin: 200px 50px;
+            padding: 20px 20px;
+            width: 30%;
+        }
+        .formgroup input
+        {
+            text-align: center;
+            width: 250px;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 500px;   /* set border radius HUGE to get perfect roundness at corners */
+            font-family: 'Poppins', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left for logo and title -->
+            <img src="img/580b585b2edbce24c47b2772.png" alt="">
+            <div>Cypher Library</div>
+        </div>
+        <div class="mid">
+            <!-- mid for navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Buy membership</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right for buttons/search -->
+            <button class="btn">Search</button>
+            <button class="btn">Help</button>
+        </div>
+        <div class="container">
+            <h2>Buy Membership</h2>
+            <form action="noaction.php">
+                <div class="formgroup">
+                    Name : <input type="text" name="name" id="myname" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    Date of Birth : <input type="date" name="date of birth" id="mydob">
+                </div>
+                <div class="formgroup">
+                    Mobile no. : <input type="number" name="number" id="mynum" placeholder="Enter your mobile number">
+                </div>
+                <div class="formgroup">
+                    Email ID : <input type="email" name="email" id="myname" placeholder="Enter your email id">
+                </div>
+                <div>
+                    <button class="btn">Submit</button>
+                    <button class="btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
